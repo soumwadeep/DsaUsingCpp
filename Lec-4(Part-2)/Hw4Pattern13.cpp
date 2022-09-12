@@ -8,7 +8,6 @@ int main()
     ABCD
     ABCD
     */
-    */
     int n;
     cout<<"Upto?"<<endl;
     cin>>n;
