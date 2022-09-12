@@ -1,13 +1,12 @@
-// WRONG
 #include<iostream>
 using namespace std;
 int main()
 {
     /*
     1
-    2 3
-    3 4 5
-    4 5 6 7
+    2 1
+    3 2 1
+    4 3 2 1
     */
     int n;
     cout<<"Upto?"<<endl;
@@ -16,12 +15,10 @@ int main()
     while(row<=n)
     {
         int col=1;
-        int value=row;
         while(col<=row)
         {
-            cout<<value;
-            value++;
-            col++;
+            cout<<(row-col+1);
+            col=col+1;
         }
         cout<<endl;
         row++;
